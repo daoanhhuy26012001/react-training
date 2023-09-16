@@ -1,0 +1,15 @@
+.message {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-small);
+  line-height: var(--line-height-small);
+}
+
+.message-error {
+  color: red;
+}
+
+.message-successful {
+  color: green;
+}
+
+
