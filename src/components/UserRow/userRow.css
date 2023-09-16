@@ -1,0 +1,5 @@
+.information {
+  font-size: 15px;
+  font-weight: var(--font-weight-small);
+  line-height: var(--line-height-small);
+}
