@@ -27,7 +27,7 @@ const Input = ({ id, label, type, placeholder, onChange }: InputProps) => (
 Input.defaultProps = {
   id: '',
   label: '',
-  type: '',
+  type: 'text',
   onchange: () => {}
 };
 
