@@ -5,16 +5,16 @@ import './message.css';
 
 interface MessageProps extends HTMLAttributes<HTMLParagraphElement> {
   children?: string;
-  action?: 'error' | 'successful';
+  type?: 'error' | 'successful';
 }
 
-const Message = ({ children, action }: MessageProps) => (
-  <p className={`message message-${action}`}>{children}</p>
+const Message = ({ children, type }: MessageProps) => (
+  <p className={`message message-${type}`}>{children}</p>
 );
 
 Message.defaultProps = {
   children: '',
-  action: 'error'
+  type: 'error'
 };
 
 export default Message;
