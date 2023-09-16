@@ -1,0 +1,17 @@
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-enter {
+  border-radius: var(--rounded-primary);
+  border: 1px solid #cacaca;
+  padding: 6px;
+  font-size: 12px;
+}
+
+.form-label {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-medium);
+  font-weight: var(--font-weight-medium);
+}
