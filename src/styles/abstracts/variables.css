@@ -1,0 +1,23 @@
+:root {
+  /* COLOR */
+  --color-primary: #5046e5;
+  --color-secondary: #eeeff1;
+
+  /* FONT-SIZE */
+  --font-size-small: 0.813rem;
+  --font-size-medium: 1.125rem;
+  --font-size-large: 2.25rem;
+
+  /* LINE-HEIGHT */
+  --line-height-small: 1.5rem;
+  --line-height-medium: 1.75rem;
+  --line-height-large: 2.5rem;
+
+  /* FONT-WEIGHT */
+  --font-weight-small: 500;
+  --font-weight-medium: 600;
+  --font-weight-large: 700;
+
+  /* BORDER-RADIUS */
+  --rounded-primary: 0.375rem;
+}
