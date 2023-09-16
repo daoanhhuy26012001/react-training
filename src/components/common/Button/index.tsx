@@ -4,27 +4,18 @@ import { ButtonHTMLAttributes, MouseEventHandler, ReactNode } from 'react';
 import './button.css';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: string;
+  variant?: 'primary' | 'secondary' | 'tertiary';
   children?: ReactNode;
   onClick?: MouseEventHandler<HTMLButtonElement>;
 }
 
-const Button = ({ variant = '', children = '', onClick }: ButtonProps) => {
-  let buttonClassName = '';
-
-  switch (variant) {
-  case 'primary':
-    buttonClassName = 'button-primary';
-    break;
-  case 'secondary':
-    buttonClassName = 'button-secondary';
-    break;
-  default:
-    buttonClassName = 'button-tertiary';
-  }
-
+const Button = ({
+  variant = 'primary',
+  children = '',
+  onClick = () => {}
+}: ButtonProps) => {
   return (
-    <button className={`button ${buttonClassName}`} onClick={onClick}>
+    <button className={`button button-${variant}`} onClick={onClick}>
       {children}
     </button>
   );
