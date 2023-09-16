@@ -9,16 +9,18 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   onClick?: MouseEventHandler<HTMLButtonElement>;
 }
 
-const Button = ({
-  variant = 'primary',
-  children = '',
-  onClick = () => {}
-}: ButtonProps) => {
+const Button = ({ variant, children, onClick }: ButtonProps) => {
   return (
     <button className={`button button-${variant}`} onClick={onClick}>
       {children}
     </button>
   );
+};
+
+Button.defaultProps = {
+  variant: 'primary',
+  children: '',
+  onClick: () => {}
 };
 
 export default Button;
