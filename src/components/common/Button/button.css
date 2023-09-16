@@ -1,0 +1,27 @@
+.button {
+  border-radius: var(--rounded-primary);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-small);
+  border: 2px solid;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* Primary */
+.button-primary {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* Secondary */
+.button-secondary {
+  background-color: var(--color-secondary);
+  border-color: transparent;
+}
+
+/* Secondary */
+.button-tertiary {
+  background-color: white;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
