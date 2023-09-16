@@ -13,14 +13,14 @@ const Button = ({ variant = '', children = '', onClick }: ButtonProps) => {
   let buttonClassName = '';
 
   switch (variant) {
-    case 'primary':
-      buttonClassName = 'button-primary';
-      break;
-    case 'secondary':
-      buttonClassName = 'button-secondary';
-      break;
-    default:
-      buttonClassName = 'button-tertiary';
+  case 'primary':
+    buttonClassName = 'button-primary';
+    break;
+  case 'secondary':
+    buttonClassName = 'button-secondary';
+    break;
+  default:
+    buttonClassName = 'button-tertiary';
   }
 
   return (
