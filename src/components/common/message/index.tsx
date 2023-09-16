@@ -5,7 +5,7 @@ import './message.css';
 
 interface MessageProps extends HTMLAttributes<HTMLParagraphElement> {
   children?: string;
-  type?: 'error' | 'successful';
+  type?: 'error' | 'success';
 }
 
 const Message = ({ children, type }: MessageProps) => (
